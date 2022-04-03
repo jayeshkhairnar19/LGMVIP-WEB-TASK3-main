@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Enrollment Form</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Student Enrollment Form</a>
+        <div class="collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="msgBox">
+
+    </div>
+
+    <div class="container my-4">
+        <form>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" autocomplete="off">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" autocomplete="off">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Website</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="website" autocomplete="off">
+                </div>
+            </div>
+            <fieldset class="row mb-3">
+                <div class="col-sm-2">
+                    <legend class="col-form-label pt-0">Gender</legend>
+                </div>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="form-check mx-4">
+                            <input class="form-check-input" type="radio" name="genderradio" id="maleRadio" value="Male"
+                                checked>
+                            <label class="form-check-label" for="maleRadio">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check mx-4">
+                            <input class="form-check-input" type="radio" name="genderradio" id="femaleRadio"
+                                value="Female">
+                            <label class="form-check-label" for="femaleRadio">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row mb-3">
+                <div class="col-sm-2">
+                    <label class="col-sm-2 col-form-label">Skills</label>
+                </div>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="form-check mx-4">
+                            <input class="form-check-input" type="checkbox" id="html" name="html" value="HTML">
+                            <label class="form-check-label" for="html">
+                                HTML
+                            </label>
+                        </div>
+                        <div class="form-check mx-4">
+                            <input class="form-check-input" type="checkbox" id="css" name="css" value="CSS">
+                            <label class="form-check-label" for="css">
+                                CSS
+                            </label>
+                        </div>
+                        <div class="form-check mx-4">
+                            <input class="form-check-input" type="checkbox" id="js" name="js" value="Javascript">
+                            <label class="form-check-label" for="js">
+                                Javascript
+                            </label>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="addStd">Enroll Student</button>
+        </form>
+
+
+        <hr class="mt-5">
+        <h3 class="my-2">Students List</h3>
+        <hr>
+
+        <div class="container" id="students"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
